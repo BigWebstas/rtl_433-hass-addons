@@ -9,4 +9,4 @@ DISCOVERY_PREFIX=$(bashio::config "discovery_prefix")
 DISCOVERY_INTERVAL=$(bashio::config "discovery_interval")
 
 echo "Starting rtl_433_mqtt_hass.py..."
-python3 /rtl_433_mqtt_hass.py -d -u $MQTT_USER -P $MQTT_PASS -H $MQTT_HOST -p $MQTT_PORT -R "$RTL_TOPIC" -D "$DISCOVERY_PREFIX" -i $DISCOVERY_INTERVAL
+python3 /rtl_433_mqtt_hass.py -d -r -u $MQTT_USER -P $MQTT_PASS -H $MQTT_HOST -p $MQTT_PORT -R "$RTL_TOPIC" -D "$DISCOVERY_PREFIX" -i $DISCOVERY_INTERVAL
